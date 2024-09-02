@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Basic reset for padding and margin */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style the navigation bar */
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        /* Style the list */
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Style for links */
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        /* color on hover */
+        nav ul li a:hover {
+            background-color: #817474;
+            transition: 0.3s;
+        }
+
+        /* Style for brand name */
+        .brand {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
+    <nav>
+        <ul>
+            <li class="brand"><a href="#">SEAGULL</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     <h2>Welcome To Seagull</h2>
 <p>This is paragraph of text that give more information about the content of our webpage</p>
 <p>Click <a href="about.html">here</a> to learn more about me</p>
