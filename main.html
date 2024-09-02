@@ -27,7 +27,11 @@
             align-items: center;
         }
 
-        /* Style for links */
+        /* Style the links */
+        nav ul li {
+            position: relative;
+        }
+
         nav ul li a {
             color: white;
             text-decoration: none;
@@ -35,16 +39,44 @@
             display: block;
         }
 
-        /* color on hover */
+        /* Change color on hover */
         nav ul li a:hover {
-            background-color: #817474;
+            background-color: #555;
             transition: 0.3s;
         }
 
-        /* Style for brand name */
+        /* Style the brand name */
         .brand {
             font-size: 1.5em;
             font-weight: bold;
+        }
+
+        /* Dropdown menu styling */
+        nav ul li ul {
+            display: none; /* Hide dropdown by default */
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            padding: 0;
+            list-style-type: none;
+            min-width: 160px;
+        }
+
+        nav ul li:hover ul {
+            display: block; /* Show dropdown on hover */
+        }
+
+        nav ul li ul li {
+            width: 100%;
+        }
+
+        nav ul li ul li a {
+            padding: 10px;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #555;
         }
     </style>
 </head>
@@ -53,10 +85,38 @@
     <nav>
         <ul>
             <li class="brand"><a href="#">SEAGULL</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li>
+                <a href="#">Home</a>
+            <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+            
+            <li>
+                <a href="#">About</a>
+                <ul>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Our Founders</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">App Development</a></li>
+                    <li><a href="#">SEO Services</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+                <ul>
+                    <li><a href="#">Google Maps</a></li>
+                    <li><a href="#">Conatct Formular</a></li>
+                    <li><a href="#">Our Offices</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <h2>Welcome To Seagull</h2>
